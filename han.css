@@ -1,3 +1,4 @@
+
 @charset "UTF-8";
 
 /*! 漢字標準格式 v3.2.7 改 | MIT License | css.hanzi.co | overflow.cat */
@@ -197,8 +198,8 @@ cite:lang(ja),
 cite:lang(zh),
 dfn:lang(ja),
 dfn:lang(zh),
-i:lang(ja),
-i:lang(zh),
+i:not([class^="fa"]):lang(ja),
+i:not([class^="fa"]):lang(zh),
 var:lang(ja),
 var:lang(zh) {
   font-style: inherit;
@@ -1667,9 +1668,9 @@ html.no-unicoderange:lang(ja) {
 article blockquote i :lang(ja-Latn),
 article blockquote i :lang(zh-Latn),
 article blockquote i :not(:lang(zh)):not(:lang(ja)),
-article blockquote i:lang(ja-Latn),
-article blockquote i:lang(zh-Latn),
-article blockquote i:not(:lang(zh)):not(:lang(ja)),
+article blockquote i:not([class^="fa"]):lang(ja-Latn),
+article blockquote i:not([class^="fa"]):lang(zh-Latn),
+article blockquote i:not([class^="fa"]):not(:lang(zh)):not(:lang(ja)),
 article blockquote var :lang(ja-Latn),
 article blockquote var :lang(zh-Latn),
 article blockquote var :not(:lang(zh)):not(:lang(ja)),
@@ -1679,40 +1680,40 @@ article blockquote var:not(:lang(zh)):not(:lang(ja)) {
   font-family: "Latin Italic Sans", "Helvetica Neue", Helvetica, Arial,
     "Han Heiti", sans-serif;
 }
-article blockquote i:lang(zh),
-article blockquote i:lang(zh-Hant),
+article blockquote i:not([class^="fa"]):lang(zh),
+article blockquote i:not([class^="fa"]):lang(zh-Hant),
 article blockquote var:lang(zh),
 article blockquote var:lang(zh-Hant) {
   font-family: "Biaodian Pro Sans CNS", "Latin Italic Sans", "Helvetica Neue",
     Helvetica, Arial, "Zhuyin Heiti", "Han Heiti", sans-serif;
 }
-.no-unicoderange article blockquote i:lang(zh),
-.no-unicoderange article blockquote i:lang(zh-Hant),
+.no-unicoderange article blockquote i:not([class^="fa"]):lang(zh),
+.no-unicoderange article blockquote i:not([class^="fa"]):lang(zh-Hant),
 .no-unicoderange article blockquote var:lang(zh),
 .no-unicoderange article blockquote var:lang(zh-Hant) {
   font-family: "Latin Italic Sans", "Helvetica Neue", Helvetica, Arial,
     "Han Heiti", sans-serif;
 }
-article blockquote i:lang(zh-CN),
-article blockquote i:lang(zh-Hans),
+article blockquote i:not([class^="fa"]):lang(zh-CN),
+article blockquote i:not([class^="fa"]):lang(zh-Hans),
 article blockquote var:lang(zh-CN),
 article blockquote var:lang(zh-Hans) {
   font-family: "Biaodian Pro Sans GB", "Latin Italic Sans", "Helvetica Neue",
     Helvetica, Arial, "Han Heiti GB", sans-serif;
 }
-.no-unicoderange article blockquote i:lang(zh-CN),
-.no-unicoderange article blockquote i:lang(zh-Hans),
+.no-unicoderange article blockquote i:not([class^="fa"]):lang(zh-CN),
+.no-unicoderange article blockquote i:not([class^="fa"]):lang(zh-Hans),
 .no-unicoderange article blockquote var:lang(zh-CN),
 .no-unicoderange article blockquote var:lang(zh-Hans) {
   font-family: "Latin Italic Sans", "Helvetica Neue", Helvetica, Arial,
     "Han Heiti GB", sans-serif;
 }
-article blockquote i:lang(ja),
+article blockquote i:not([class^="fa"]):lang(ja),
 article blockquote var:lang(ja) {
   font-family: "Yakumono Sans", "Latin Italic Sans", "Helvetica Neue", Helvetica,
     Arial, sans-serif;
 }
-.no-unicoderange article blockquote i:lang(ja),
+.no-unicoderange article blockquote i:not([class^="fa"]):lang(ja),
 .no-unicoderange article blockquote var:lang(ja) {
   font-family: "Latin Italic Sans", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
@@ -1806,9 +1807,9 @@ article blockquote:lang(ja) {
 i :lang(ja-Latn),
 i :lang(zh-Latn),
 i :not(:lang(zh)):not(:lang(ja)),
-i:lang(ja-Latn),
-i:lang(zh-Latn),
-i:not(:lang(zh)):not(:lang(ja)),
+i:not([class^="fa"]):lang(ja-Latn),
+i:not([class^="fa"]):lang(zh-Latn),
+i:not([class^="fa"]):not(:lang(zh)):not(:lang(ja)),
 var :lang(ja-Latn),
 var :lang(zh-Latn),
 var :not(:lang(zh)):not(:lang(ja)),
@@ -1818,42 +1819,42 @@ var:not(:lang(zh)):not(:lang(ja)) {
   font-family: "Latin Italic Serif", Georgia, "Times New Roman", "Han Kaiti",
     cursive, serif;
 }
-i:lang(zh),
-i:lang(zh-Hant),
+i:not([class^="fa"]):lang(zh),
+i:not([class^="fa"]):lang(zh-Hant),
 var:lang(zh),
 var:lang(zh-Hant) {
   font-family: "Biaodian Pro Serif CNS", "Numeral LF Italic Serif",
     "Latin Italic Serif", Georgia, "Times New Roman", "Zhuyin Kaiti",
     "Han Kaiti", cursive, serif;
 }
-.no-unicoderange i:lang(zh),
-.no-unicoderange i:lang(zh-Hant),
+.no-unicoderange i:not([class^="fa"]):lang(zh),
+.no-unicoderange i:not([class^="fa"]):lang(zh-Hant),
 .no-unicoderange var:lang(zh),
 .no-unicoderange var:lang(zh-Hant) {
   font-family: "Numeral LF Italic Serif", "Latin Italic Serif", Georgia,
     "Times New Roman", "Han Kaiti", cursive, serif;
 }
-i:lang(zh-CN),
-i:lang(zh-Hans),
+i:not([class^="fa"]):lang(zh-CN),
+i:not([class^="fa"]):lang(zh-Hans),
 var:lang(zh-CN),
 var:lang(zh-Hans) {
   font-family: "Biaodian Pro Serif GB", "Numeral LF Italic Serif",
     "Latin Italic Serif", Georgia, "Times New Roman", "Han Kaiti GB", cursive,
     serif;
 }
-.no-unicoderange i:lang(zh-CN),
-.no-unicoderange i:lang(zh-Hans),
+.no-unicoderange i:not([class^="fa"]):lang(zh-CN),
+.no-unicoderange i:not([class^="fa"]):lang(zh-Hans),
 .no-unicoderange var:lang(zh-CN),
 .no-unicoderange var:lang(zh-Hans) {
   font-family: "Numeral LF Italic Serif", "Latin Italic Serif", Georgia,
     "Times New Roman", "Han Kaiti GB", cursive, serif;
 }
-i:lang(ja),
+i:not([class^="fa"]):lang(ja),
 var:lang(ja) {
   font-family: "Yakumono Serif", "Numeral LF Italic Serif", "Latin Italic Serif",
     Georgia, "Times New Roman", cursive, serif;
 }
-.no-unicoderange i:lang(ja),
+.no-unicoderange i:not([class^="fa"]):lang(ja),
 .no-unicoderange var:lang(ja) {
   font-family: "Numeral LF Italic Serif", "Latin Italic Serif", Georgia,
     "Times New Roman", cursive, serif;
